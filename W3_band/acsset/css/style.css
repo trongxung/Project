@@ -1,0 +1,174 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html {
+    font-family: Arial, Helvetica, sans-serif;
+}
+#main {
+
+}
+.clear {
+    clear: both;
+}
+#header {
+    position: fixed; /* cố định được thẻ header khi có bị lăn chuột */
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 46px;
+    background-color: black;
+    z-index: 1; /* Độ sâu của thẻ header để nổi lên trước thẻ slider */
+}
+#nav {
+    display: inline-block;
+}
+#nav li {
+    display: inline-block;  /* Đưa nav thành 1 hàng ngang */
+    position: relative;
+}
+#nav > li > a { /* thuộc tính selector */
+    color: white;
+    text-transform: uppercase;
+}
+#nav li a {
+    text-decoration: none; /* bỏ gạch chân */
+    padding: 0 24px;
+    line-height: 46px;
+    display: block;
+}
+#nav > li:hover > a { /* trỏ chuột */
+    color: #000!important;
+    background-color: #ccc!important;
+}
+.nav-arrow-dow {
+    /* giảm kích thước icon .bình thường là 16px */
+    font-size: 14px;
+}
+#nav .subnav {
+    position: absolute;
+    display: none;  /* Ẩn khi chưa bấm vào More */
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+    background-color: white;
+    top: 100%;
+    left: 0;
+}
+#nav .subnav li a {
+    color: black;
+    min-width: 160px; /* chiều dài của class subnav */
+    padding: 0 12px;
+    line-height: 38px;
+}
+#nav , .subnav {
+    list-style-type: none; /* Bỏ các đánh dấu list nếu có  */
+}
+#nav li:hover .subnav {
+    /* bấm vào More thì hiện nav cấp 2 nó bỏ qua luôn cái none bên trên */
+    display: block;
+}
+#nav .subnav li:hover a {
+    color: #000!important;
+    background-color: #ccc!important;
+    display: block;
+}
+#header .nav-search-btn {
+    /* Định vị trí cho ô search */
+    color: white;
+    font-size: 20px;
+    float: right;
+    line-height: 46px;
+    padding: 0 21px;
+}
+#header .nav-search-btn:hover {
+    color: #fff!important;
+    background-color: #f44336!important;
+    cursor: pointer;
+}
+#slider {
+    position: relative;
+    margin-top: 46px;
+    padding-top:50%; /* chiều dọc = 1/2 chiều ngang */
+    background: url('C:/Users/Admin/Desktop/Xây Dựng Trang Web/W3_band/acsset/css/img/slider/slider1.jpg') top center / cover no-repeat;   
+}
+#slider .text-content {
+    position: absolute;
+    bottom: 47px; /* khoảng cách giữa text vs bottom */
+    color: white;
+    text-align: center;
+    width: 100%; /* căn chiều ngang cho font chữ */
+}
+#slider .text-heading {
+    font-weight: 500; /* cỡ chữ heading */
+    font-size: 24px;
+}
+#slider .text-text {
+    font-size: 15px; /* cỡ chữ */
+    margin-top: 25px; /* khoảng cách giữa 2 text*/
+}
+
+#content {
+
+}
+#content .content-section {
+    margin-top:64px;
+    margin-left: auto;
+    margin-right: auto;
+    width:800px;
+    
+}
+#content .section-heading {
+    text-align:center;
+    font-weight: 400;
+    letter-spacing: 4px; /* khoảng cách giữa các chữ*/
+}
+#content .section-sub-heading {
+    text-align:center;
+    font-style: italic; /* chữ in nghiêng*/
+    font-weight: 0.6;
+    margin-top:25px;  
+}
+#content .band-text {
+    margin-top: 30px;
+    text-align: justify; /*căn lề */
+    line-height:1.4; 
+}
+#content .members-list {
+    padding-bottom: 64px;
+}
+#content .members-iteam {
+    float:left;
+    width: calc(100% / 3);
+    margin-top: 47px;
+    text-align:center;
+}
+#content .members-name {
+    font-size: 15px;
+    margin-bottom: 15px;
+}
+#content .member-img {
+    width: 154px;
+    border-radius: 3px;
+}
+/*  tour-section  */
+#content .tour-section {
+   background-color: black
+}
+.white-text {
+    color: white;
+}
+.tour-section .content-section{
+    padding-top:64px;
+    padding-bottom: 64px;
+}
+.tour-section .tickkets-list {
+    background-color: white;
+    margin-top: 16px;
+}
+#footer {
+
+}
+
+
+
+

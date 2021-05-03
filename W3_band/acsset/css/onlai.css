@@ -1,0 +1,120 @@
+* {
+    padding:0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html {
+    font-family: Arial, Helvetica, sans-serif;
+}
+#main {
+
+}
+#header {
+    background-color: black;
+    height: 46px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+
+}
+#nav {
+    display: inline-block;
+    
+}
+#nav li {
+    display: inline-block;
+    position: relative;
+}
+#nav > li > a {
+    color: white;
+}
+#nav li a {
+    text-decoration: none;
+    line-height: 46px;
+    padding: 0 24px;
+    display: inline-block;
+}
+#nav > li > a {
+    text-transform: uppercase;
+}
+#nav > li:hover > a {
+    color: #000!important;
+    background-color: #ccc!important;
+}
+#nav .nav-arrow-down {
+    color: white;
+    font-size: 14px;
+}
+#nav .subnav {
+    display: none;
+    position: absolute;
+    background-color:white;
+    box-shadow: 0 0 10px rgba(0,0,0,0.3)
+}
+#nav .subnav li {
+    
+    display: block;
+    width: 160px;
+  
+}
+#nav .subnav li a {
+    padding: 0 12px;
+    line-height: 38px;
+    font: 15px;
+    color: black;
+
+}
+#nav .subnav li:hover {
+    color: #000!important;
+    background-color: #ccc!important;
+}
+#nav > li:hover > .subnav {
+    display: block;
+}
+#header .search-btn {
+    float: right;
+    padding: 0 23px;
+    cursor: pointer;
+}
+#header .search-icon {
+    color: white;
+    line-height: 46px;
+    font-size: 14px;
+}
+#header .search-btn:hover {
+    color: #fff!important;
+    background-color: #f44336!important;
+}
+#slider {
+    position: relative;
+    margin-top: 46px;
+    padding-top: 50%;
+    background: url("C:/Users/Admin/Desktop/Xây Dựng Trang Web/W3_band/acsset/css/img/slider/slider1.jpg") top center / cover no-repeat;
+}
+#slider .text-content {
+    position: absolute;
+    bottom: 47px;
+    width: 100%;
+    text-align: center;
+    color: white;
+
+}
+#slider .text-heading {
+    font-weight: 500;
+    font-size: 24px;
+    margin-bottom: 25px;
+}
+#slider .text-text {
+     font-size: 15px;
+}
+#content {
+    height: 1000px;
+    background-color: violet;
+
+
+}
+#footer {
+
+}
